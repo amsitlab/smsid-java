@@ -23,9 +23,9 @@
 
 
 ## Cara Penggunaan 
-===================
+------------------
 
-##### 1. Menapilkan pesan help.
+#### 1. Menapilkan pesan help.
 
    Menampilkan text help sangatlah mudah,
    cukup ketik ini di command prompt:
@@ -78,7 +78,7 @@
    Command di atas akan menampilkan input prompt 
    guna memasukan pesan yang akan di kirim.
    Bahkan parameter **[phone-number]** dan juga
-   **[messae]**bisa di kosongkan keduanya, seperti:
+   **[message]** bisa di kosongkan keduanya, seperti:
 
 
    ```bash
@@ -91,7 +91,7 @@
 
 #### 3. Mengirim pesan multi
    bisa juga di sebut spam karna mengirim hal yang sama.
-   bedanya disini textnya dapat di custom  sesuai 
+   bedanya disini textnya dapat di custom sesuai 
    kehendak (yang terpenting valid).
 
    Jika ingin mengirim pesan multi,bisa menggunakan
@@ -119,15 +119,15 @@
    pkg install git
    ```
 
-   Jika susah, bisa ketahap berikutnya,
+   Jika sudah, bisa ketahap berikutnya,
    yaitu menginstall program ini dengan mengetik 
    command seperti ini :
 
    ```bash
    git clone https://github.com/amsitlab/smsid-java.git
    ```
-   Tunggu beberapa saat hingga program gite selesai
-   menyalin, jika sudah lanjut kethap berikutnya,
+   Tunggu beberapa saat hingga program git selesai
+   menyalin, jika sudah lanjut ketahap berikutnya,
    yaitu pindah ke directory ./smsid-java dengan
    cara:
 
@@ -144,7 +144,7 @@
 
    > NB: sebelum menggunakan command di atas 
    > pastikan directory sekarang berada di dalam 
-   > */data/data/com.termux/files/* guna menghindari
+   > */data/data/com.termux/files/* dan **bukan** di dalam directory */sdcard/* guna menghindari
    > terjadinya error "**permission denied**"
 
 
@@ -166,7 +166,7 @@
 
 
    ```bash
-   apt install
+   apt install smsid_1.1_all.deb
    ```
 
 ## Author
@@ -180,15 +180,15 @@
 ------------
 
 
- [picocli](https://github.com/ramkop/picocli) 
+ [picocli](https://github.com/remkop/picocli) 
 
- [Ecj Batch Compiler](https://eclipse.org/jdt/core)
+ [ecj](https://github.com/eclipse/eclipse.jdt.core) termux ecj package 
 
- Android dx tools
+ [dxalt](https://github.com/amsitlab/dxalt) Android dx *alternave* (for termux)
 
 
 ## Changelog
 ------------
-1.1 Adding Subcommand.
+1.1 Adding Subcommand, using picocli.
 
 1.0 Working Progress.
