@@ -58,7 +58,7 @@
    command di atas akan menampilkan input prompt 
    guna memasukan pesan yang akan di kirim.
 
-   Bahkan parameter **[phone-number]** dan juga **[messahe]**
+   Bahkan parameter **[phone-number]** dan juga **[messae]**
    bisa di kosongkan keduanya, seperti:
    ```bash
   smsid send 
@@ -74,6 +74,7 @@
 
    Jika ingin mengirim pesan multi,bisa menggunakan
    command ini.
+
    ```bash
    smsid boom [-y] [phone-number] [message] [max-send]
    ```
@@ -127,30 +128,42 @@
    ```bash
    apt install ./smsid_x.x_all.deb
    ```
+
+
    > "**x.x**" adalah version package yg telah di
-   download. untuk melihat versi berapa yg telah di
-   install bisa menggunakan command "**ls**" untuk
-   melihat file.
+   > download. untuk melihat versi berapa yg telah di
+   > install bisa menggunakan command "**ls**" untuk
+   > melihat file.
 
    jika file yg telah di download/clone adalah 
    *smsid_1.1_all.deb* maka ketik seperti ini 
-   di commandline.
+   di commandline:
 
+
+   ```bash
+   apt install
+   ```
 
 ## Author
-==========
+----------
+
+
 [@amsitlab](https://amsitlab.github.io)
 
 
 ## Buildwith
-============
+------------
+
+
  [picocli](https://github.com/ramkop/picocli) 
+
  [Ecj Batch Compiler](https://eclipse.org/jdt/core)
+
  Android dx tools
 
 
 ## Changelog
-============
+------------
 1.1 Adding Subcommand.
 
 1.0 Working Progress.
