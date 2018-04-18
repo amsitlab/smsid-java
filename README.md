@@ -8,11 +8,25 @@
 > Tak perlu **python**, **php**, **ruby**, **perl**, **golang** ataupun program interpreter lainnya, untuk menjalankan ini, karna ini berjalan langsung pada dalvikVM (android virtual mechine).
 
 
+## Daftar Isi
+
+- [Cara Penggunaan](#cara-penggunaan)
+
+- [Installation](#installation)
+
+- [Author](#author)
+
+- [Buildwith](#buildwith)
+
+- [Changelog](#changelog)
+
+
 
 ## Cara Penggunaan 
 ===================
 
-1. Menapilkan pesan help.
+##### 1. Menapilkan pesan help.
+
    Menampilkan text help sangatlah mudah,
    cukup ketik ini di command prompt:
    ```bash
@@ -27,8 +41,10 @@
    smsid -h
    ```
 
-2. Mengirim pesan tunggal.
-   ```
+#### 2. Mengirim pesan tunggal.
+
+
+   ```bash
    smsid send [phone-number] [message]
    ```
    **[phone-number]** harus berupa angka,
@@ -46,28 +62,34 @@
    agar pesan yang di kirim tidak terpotong.
 
    contoh:
+
+
    ```bash
    smsid send 081234567890 "Ini pesan saya"
    ```
 
    Bisa juga mengosongkan parameter **[message]**
    seperti:
+
    ```bash
    smsid send 081234557890
    ```
-   command di atas akan menampilkan input prompt 
-   guna memasukan pesan yang akan di kirim.
 
-   Bahkan parameter **[phone-number]** dan juga **[messae]**
-   bisa di kosongkan keduanya, seperti:
+   Command di atas akan menampilkan input prompt 
+   guna memasukan pesan yang akan di kirim.
+   Bahkan parameter **[phone-number]** dan juga
+   **[messae]**bisa di kosongkan keduanya, seperti:
+
+
    ```bash
-  smsid send 
+   smsid send 
    ```
-   command diatas akan menampilkan input prompt guna 
+
+   Command diatas akan menampilkan input prompt guna 
    memasukan nomor tujuan dan pesan yang akan dikirim.
 
 
-3. Mengirim pesan multi
+#### 3. Mengirim pesan multi
    bisa juga di sebut spam karna mengirim hal yang sama.
    bedanya disini textnya dapat di custom  sesuai 
    kehendak (yang terpenting valid).
@@ -87,7 +109,8 @@
 
 
 ## INSTALLATION
-1. Dengan **git clone** .
+
+#### 1. Dengan **git clone** .
    Cara ini mengharuskan sudah menginstall program git,
    Jika belum mempunyai program git pada prangkat,
    bisa menggunakan command di bawah untuk menginstall.
@@ -114,16 +137,18 @@
 
    lalu beri akses **x** untuk file ./install dengan
    cara:
-   > NB: sebelum menggunakan command di bawah 
-   pastikan directory sekarang berada di dalam 
-   */data/data/com.termux/files/* guna menghindari
-   terjadinya error "**permission denied**"
 
    ```bash
    chmod +x ./install 
    ```
 
-   atau bisa juga dengan menggunakan **apt**:
+   > NB: sebelum menggunakan command di atas 
+   > pastikan directory sekarang berada di dalam 
+   > */data/data/com.termux/files/* guna menghindari
+   > terjadinya error "**permission denied**"
+
+
+   Atau bisa juga dengan menggunakan **apt**:
 
    ```bash
    apt install ./smsid_x.x_all.deb
