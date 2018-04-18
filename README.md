@@ -180,11 +180,11 @@
 ------------
 
 
- [picocli](https://github.com/remkop/picocli) 
+* [picocli](https://github.com/remkop/picocli)  a mighty tiny command line interface
 
- [ecj](https://github.com/eclipse/eclipse.jdt.core) termux ecj package 
+* [ecj](https://github.com/eclipse/eclipse.jdt.core) termux ecj package 
 
- [dxalt](https://github.com/amsitlab/dxalt) Android dx *alternave* (for termux)
+* [dxalt](https://github.com/amsitlab/dxalt) Android dx *alternative* (for termux)
 
 
 ## Changelog
