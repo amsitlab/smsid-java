@@ -1,0 +1,40 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+
+DALVIKVM=`which dalvikvm`
+PKG_FILE="./smsid_1.1_all.deb";
+PKG_NAME="smsid";
+
+echo -e "\033[33m";
+echo "Please wait..";
+sleep 3
+echo "Checking requiretments..";
+sleep 3
+echo -e "\033[0m";
+
+if [ ! -x "${DALVIKVM}" ]; then
+	echo -e "\033[031mThis program use dalvikvm to run.\033[0m";
+	echo "Please install it by typing:";
+	echo -e "\tpkg install termux-tools";
+	echo "Install failed";
+	exit;
+else
+	echo -e "\033[36mdalvikvm\033[0m already";
+fi
+
+echo "Finding package.."
+sleep 3
+if [ ! -f "${PKG_FILE}" ]; then
+	echo -e "\033[31mCannot find package\033[0m \033[33m${PKG_FILE}\033[0m"
+	echo "Install failed";
+	exit;
+fi
+
+echo "Package will be install.";
+echo "Run it when you want to uninstall.";
+echo -e "\tapt remove ${PKG_NAME}";
+echo "Installing package";
+sleep 3
+
+exec apt install "${PKG_FILE}";
+
